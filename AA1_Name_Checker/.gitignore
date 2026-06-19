@@ -1,0 +1,22 @@
+# Output folders
+Output/
+Output1/
+Output2/
+Output3/
+
+# Excel output files
+*.xlsx
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# FME workspace files
+*.fmw
+
+# Temp / lock files
+~$*
+
+# Environment
+.env
