@@ -1,0 +1,6 @@
+[server]
+maxUploadSize = 500        # MB — hard cap for the upload tab
+enableXsrfProtection = false
+
+[browser]
+gatherUsageStats = false

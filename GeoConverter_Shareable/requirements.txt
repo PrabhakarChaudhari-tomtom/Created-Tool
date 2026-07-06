@@ -1,0 +1,17 @@
+# Geospatial Format Converter - ADP Team, TomTom
+# Supported Python versions: 3.10, 3.11, 3.12, 3.13
+# Python 3.14+ is NOT supported — pre-built wheels for geospatial
+# libraries (fiona, geopandas) are not yet available for Python 3.14.
+# Please install Python 3.11 or 3.12 from https://www.python.org/downloads/
+#
+# fiona 1.9.5+ bundles GDAL 3.6.4 which includes OpenFileGDB write support
+# (required for .gdb output). Do NOT install a separate 'gdal' package via pip
+# as it can conflict with the GDAL bundled inside fiona/geopandas wheels.
+geopandas>=0.14.3,<2.0
+pyarrow>=14.0.0
+fiona>=1.9.5,<2.0
+shapely>=2.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+streamlit>=1.35.0
+fastavro>=1.9.0
