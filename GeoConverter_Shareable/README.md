@@ -2,6 +2,8 @@
 
 Streamlit app for converting geospatial data between GeoPackage, GeoParquet, GeoJSON, Shapefile, CSV, Avro, and ESRI FileGDB. Developed by the ADP Team, TomTom.
 
+Four tabs: General Converter, Areas Snapshot (GPKG → GDB), GeoJSON to GDB Conversion, and Orbis Ingestion Compatible (merges GDB/GPKG/Excel/CSV sources into a GPKG matching an exact Orbis reference template — Area, Postal Area, or POR).
+
 ## Run
 
 ```
