@@ -1,8 +1,0 @@
-# Geospatial Format Converter - ADP Team, TomTom
-# Supported Python versions: 3.10, 3.11, 3.12, 3.13
-# Python 3.14+ is NOT supported — pre-built wheels for geospatial
-# libraries (fiona, geopandas) are not yet available for Python 3.14.
-# Please install Python 3.11 or 3.12 from https://www.python.org/downloads/
-#
-# Use pre-built binary wheels only — do NOT build from source.
-# B
