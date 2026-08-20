@@ -10,10 +10,13 @@ echo.
 
 :: ── Step 1: Install dependencies ─────────────────────────────────────────────
 echo  [1/2] Installing required packages...
-pip install -r requirements.txt --quiet --disable-pip-version-check
+pip install -r requirements.txt --quiet --disable-pip-version-check --timeout 120 --retries 10
 if errorlevel 1 (
     echo.
     echo  [ERROR] Package installation failed.
+    echo  If you saw a "Read timed out" warning above, your network/proxy is
+    echo  too slow or slow to reach pypi.org - try again on a faster/wired
+    echo  connection, or ask IT about an internal PyPI mirror.
     echo  Please contact ADP team: prabhakar.chaudhari@tomtom.com
     pause
     exit /b 1
