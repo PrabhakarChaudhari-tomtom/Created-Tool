@@ -10,6 +10,20 @@ echo.
 
 :: ── Step 1: Install dependencies ─────────────────────────────────────────────
 echo  [1/2] Installing required packages...
+
+where pip >nul 2>&1
+if errorlevel 1 (
+    echo.
+    echo  [ERROR] 'pip' was not found on this machine.
+    echo  This means Python isn't installed, or was installed without being
+    echo  added to PATH. Please install Python 3.11 or 3.12 from
+    echo  https://www.python.org/downloads/ and tick "Add Python to PATH"
+    echo  on the first installer screen, then run start.bat again.
+    echo  Please contact ADP team: prabhakar.chaudhari@tomtom.com
+    pause
+    exit /b 1
+)
+
 pip install -r requirements.txt --quiet --disable-pip-version-check --timeout 120 --retries 10
 if errorlevel 1 (
     echo.
